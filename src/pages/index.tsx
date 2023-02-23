@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>消息加密器</title>
+        <title>消息加密器 Message Encipher</title>
         <meta name="description" content="Encrypt your message!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
