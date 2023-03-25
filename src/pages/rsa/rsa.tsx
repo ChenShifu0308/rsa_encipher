@@ -45,12 +45,12 @@ const RSA: React.FC = () => {
 
         <div className='flex flex-col md:flex-row justify-evenly  space-y-5 md:space-x-5 md:space-y-0'>
           <div className='privateKey_container'>
-            <div>Private Key</div>
+            <div>私钥 Private Key</div>
             <textarea name="private_key" id="private_key" rows={10}
               value={privateKey} className=' text-slate-700' />
           </div>
           <div className='publicKey_container'>
-            <div>Public Key</div>
+            <div>公钥 Public Key</div>
             <textarea name="public_key" id="public_key" rows={10}
               value={publicKey} className=' text-slate-700' />
           </div>

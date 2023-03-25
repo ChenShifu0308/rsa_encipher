@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Message Encryptor
 
-## Getting Started
+### Main Features
+Encrypt message content locally using RSA encryption algorithm. (No server, javascript algorithm runs in your local browser).
 
-First, run the development server:
+Preview URL: https://rsa-encipher.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Usage
+- First, try to generate a key pair (Generate Key Pair), click the "Generate" button to automatically generate a private key and a public key.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The automatically generated private key will be added to "My Private Key" in the "Encrypt/Decrypt Ops" section; you and the other one need to exchange public keys and add the other party's public key to "Other's Public Key".
+**Note: Never reveal your private key**
+ ![Key Gen](doc/key_gen.png)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- You can perform message encryption and decryption operations in the "Encrypt/Decrypt Ops" section below.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    - Enter the text you want to send to the other party in the left window, click "Encrypt" to generate encrypted garbled code, and then send it to the other party.
+    -The right window is used to copy the encrypted content sent by the other party, click "Decrypt" to see the confidential content.
+     ![Encrypt and Decrypt](doc/encrypt_decrypt.png)
+# 消息加密器
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 主要功能
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+使用RSA加密算法本地加密消息内容。（无服务器，js算法运行在你的本地浏览器）。
 
-## Learn More
+预览网址：[https://rsa-encipher.vercel.app/](https://rsa-encipher.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+### 使用方法
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 首先尝试生成秘钥（****Generate Key Pair****），点击 “生成 Generate按钮”，会自动生成私钥(Private Key)和公钥(Public Key)
+- 自动生成的私钥会自动添加到下方的 加密/解密 的 “**我的私钥 My Private Key”** 中; 你和对方要交换公钥（Public Key），并在“对方公钥 Other·s Public Key” 处添加对方公钥。
+**注意：永远不要暴露你的私钥**
+    ![Key Gen](doc/key_gen.png)
+    
+- 在下方的“**加解密操作 Encrypt/Decrypt Ops**”中即可进行消息加解密操作。
+    - 左侧窗口输入你要发给对方的文字，点击“加密 Encrypt”后生成加密后的乱码，然后发给对方即可。
+    - 右侧窗口用来将对方发给你的加密后内容拷贝进去，点击“解密 Decrypt” 即可看到机密内容。
+    ![Encrypt and Decrypt](doc/encrypt_decrypt.png)
